@@ -1,0 +1,36 @@
+@media (min-width: 320px) {
+  section {
+    .countdown {
+      width: 100%;
+      ul{
+        justify-content: center;
+      }
+    }
+
+    .rocket-illustration {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .waves {
+    height: 4rem;
+    min-height: 4rem;
+  }
+}
+
+@media (min-width: 1020px) {
+  section {
+
+    .countdown{
+        width: 49.4rem;
+        ul{
+          justify-content: flex-start;
+        }
+    }
+    .rocket-illustration {
+      display: initial;
+    }
+  }
+}

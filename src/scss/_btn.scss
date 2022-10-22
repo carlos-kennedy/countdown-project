@@ -1,0 +1,16 @@
+button{
+    font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        padding-inline: 3.2rem;
+        padding-block: 1rem 1.6rem;
+        border-radius: 1rem;
+        color: #FFFFFF;
+        background: $sc-color;
+        cursor: pointer;
+        transition: filter .6s;
+
+        &:hover{
+            filter: brightness(80%);
+        }
+}
