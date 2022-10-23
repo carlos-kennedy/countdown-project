@@ -7,7 +7,7 @@ const timer = [
   document.querySelector(".counter ul li:nth-child(4) h2"),
 ];
 
-let countDownDate = new Date("nov 1, 2022 15:32:15").getTime();
+const countDownDate = new Date("nov 1, 2022 15:32:15").getTime();
 const countDownEvery1Second = setInterval(function () {
   const currentDate = new Date().getTime();
   const distanceNowAndCountDownDate = countDownDate - currentDate;
