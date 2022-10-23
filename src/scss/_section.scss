@@ -21,14 +21,10 @@ section {
       ul {
         @include isFlex(display);
         text-align: center;
+        gap: 1rem;
       }
       li {
         @include isFlex(column);
-        margin-inline: 0.5rem;
-        &:nth-last-child(1) {
-          margin: 0;
-        }
-
         span {
           color: $text-color;
           opacity: 0.65;
@@ -80,12 +76,12 @@ section {
         @include positions(absolute);
         width: 2rem;
         height: 5rem;
-        bottom: 9.3rem;
+        bottom: 8rem;
         right: 37rem;
         border-radius: 0 0 0.8rem 0.8rem;
         background: linear-gradient(to top, #f55f44, #fccc63);
-        animation: slide-top 1s linear infinite alternate-reverse both,
-          pulsate-fwd 2s ease-in-out infinite both;
+        animation: slide-top 6s linear infinite alternate-reverse both,
+          pulsate-fwd-slide 8s ease-in-out alternate-reverse infinite both;
         z-index: -1;
         filter: blur(1rem);
       }

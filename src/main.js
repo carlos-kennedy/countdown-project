@@ -7,7 +7,7 @@ const timer = [
   document.querySelector(".counter ul li:nth-child(4) h2"),
 ];
 
-let countDownDate = new Date("Oct 31, 2022 15:37:15").getTime();
+let countDownDate = new Date("nov 1, 2022 15:32:15").getTime();
 const countDownEvery1Second = setInterval(function () {
   const currentDate = new Date().getTime();
   const distanceNowAndCountDownDate = countDownDate - currentDate;
@@ -26,14 +26,14 @@ const countDownEvery1Second = setInterval(function () {
     const h = date.getHours();
     const m = date.getMinutes();
     const s = date.getSeconds();
-    timer[0].innerHTML = d <= 9 ? "0" + d + " : " : d + " : ";
-    timer[1].innerHTML = h <= 9 ? "0" + h + " : " : h + " : ";
-    timer[2].innerHTML = m <= 9 ? "0" + m + " : " : m + " : ";
+    timer[0].innerHTML = d <= 9 ? "0" + d + " :" : d + " :";
+    timer[1].innerHTML = h <= 9 ? "0" + h + " :" : h + " :";
+    timer[2].innerHTML = m <= 9 ? "0" + m + " :" : m + " :";
     timer[3].innerHTML = s <= 9 ? "0" + s : s;
   } else {
-    timer[0].innerHTML = d <= 9 ? "0" + d + " : " : d + " : ";
-    timer[1].innerHTML = h <= 9 ? "0" + h + " : " : h + " : ";
-    timer[2].innerHTML = m <= 9 ? "0" + m + " : " : m + " : ";
+    timer[0].innerHTML = d <= 9 ? "0" + d + " :" : d + " :";
+    timer[1].innerHTML = h <= 9 ? "0" + h + " :" : h + " :";
+    timer[2].innerHTML = m <= 9 ? "0" + m + " :" : m + " :";
     timer[3].innerHTML = s <= 9 ? "0" + s : s;
   }
 });

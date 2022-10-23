@@ -57,16 +57,19 @@
     }
 }
 
-@keyframes pulsate-fwd {
+@keyframes pulsate-fwd-slide {
   0% {
+    bottom: 8rem;
     transform: scale(1.1);
   }
 
   50% {
+    bottom: 9rem;
     transform: scale(1);
   }
 
   100% {
+    bottom: 10rem;
     transform: scale(1);
   }
 }
